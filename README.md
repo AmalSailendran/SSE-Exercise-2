@@ -13,19 +13,34 @@ The list of tasks for exercise 2
 1.	Clone the GitHub repositories associated with 3 of your vulnerabilities (https://bit.ly/SV_SSE2019) to your computer. In case you encounter any problem cloning the repositories, let us know as soon as possible. You do not have to submit this part. Hint: git clone
 2.	The main task of exercise 2 is to analyze the fixing commits of 3 vulnerabilities you have found in Exercise 1. If the fixing commit provided was different from the one you found, then you should specify which one you choose and why.
 3.	Analyze each of the 3 fixing commits and answer the following questions for each fixing commit. If a fixing commit has more than 5 affected files, please identify at most 5 files that you think are the most relevant ones for the fix only. The Git command that you can consider for answering each question can be found in Hint.
+
 a.	What was the message and title of the fixing commit? Was there any mention of fixing a bug or vulnerability? Hint: git diff or git show
+
 b.	How many total files were affected in the fixing commit? Hint: git diff or git show
+
 c.	How many total directories were affected in the fixing commit? For example, if a file path is: abc/def/File.java, then its directory is abc/def. Hint: git diff or git show
+
 d.	How many total lines of code (including comments and blank lines) were deleted? Hint: git diff or git show
+
 e.	How many total lines of code (including comments and blank lines) were added? Hint: git diff or git show
+
 f.	How many total lines of code (excluding comments and blank lines) were deleted? Hint: git diff or git show
+
 g.	How many total lines of code (excluding comments and blank lines) were added? Hint: git diff or git show
+
 h.	How many days were between the current fixing commit and the previous commit of each affected file? Hint: git log
-i.	How many time has each affected file of the current fixing commit been modified in the past since their creation (including rename of the file)? Hint: git log
+
+i.	How many time has each affected file of the current fixing commit been modified in the past since their creation (including
+rename of the file)? Hint: git log
+
 j.	Which developers have modified each affected file since its creation? Hint: git log
+
 k.	For each developer identified, how many commits have each of them submitted? From your observation, are the involving developers experienced (with many commits) or new ones (with few commits) or both? Hint: git log or git shortlog
+
 4.	Develop an automated script to answer the above questions (e.g., using GitPython and relevant libraries as demonstrated in the tutorial in Working Session 1). Explain how you implement it in the report and attach a link to your code in your GitHub repository (make sure it is public).
+
 5.	Put the results in the Excel format we have given to you besides this file. Do not forget to change file name to your name and your student ID. For some of the fields, you may need to compute the statistics (average or sum).
+
 6.	Write a report to summarize your findings for the above tasks.
 
 The report of this exercise should be in A4-size page with Times New Roman or similar font size 12. The first page of the report should include your full name and student ID along with the list of three vulnerabilities we have assigned to you. Name the file with your name and student ID.
